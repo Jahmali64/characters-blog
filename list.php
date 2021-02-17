@@ -12,7 +12,7 @@
 		echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	}
 
-	// reading from a DB: SELECT
+	// reading from a DB
 	// * means to retrieve all the fields; can use "field1, field2,etc") instead
 	$result = mysqli_query($con, "SELECT * FROM jmc_characters") or die(mysqli_error($con));
 
